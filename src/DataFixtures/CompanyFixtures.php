@@ -24,9 +24,8 @@ class CompanyFixtures extends BaseFixtures
             $company->setName($this->faker->company)
                 ->setRiskLimit($this->faker->numberBetween(1000, 20000))
             ;
-            var_dump($count);
-            $this->addReference('company-'.$count, $company);
 
+            $this->addReference('company-'.$count, $company);
         });
 
         $manager->flush();
