@@ -1,0 +1,9 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+#fos_rest:
+#  format_listener:
+#    enabled: true
+#    rules:
+#      # setting fallback_format to json means that instead of considering the next rule in case of a priority mismatch, json will be used
+#      - { path: '^/', host: 'api.%domain%', priorities: ['json', 'xml'], fallback_format: json, prefer_extension: false }

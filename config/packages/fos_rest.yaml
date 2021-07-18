@@ -1,0 +1,21 @@
+fos_rest:
+#  param_fetcher_listener: true
+  view:
+    empty_content: 200
+    view_response_listener: true
+    failed_validation: HTTP_BAD_REQUEST
+    formats:
+      json: true
+      xml: true
+  body_listener:
+    decoders:
+      json: fos_rest.decoder.json
+      xml: fos_rest.decoder.xml
+  format_listener:
+    rules:
+      - { path: '/api', priorities: ['json', 'xml'], fallback_format: json, prefer_extension: false }
+#      - { path: '^/', stop: true, fallback_format:  json }
+#  exception:
+#    enabled: true
+#  serializer:
+#    serialize_null: true
