@@ -99,6 +99,7 @@
 - logging system for each invoice (status/invoice life cycle) starting from placing the invoice until collecting it.
 - Dedicate table/document for invoices_status_reasons) so we can provide more visibility for the account managers for their companies.
 - Use JWT for protecting the APIs and exposing rules and permissions for both APIs. 
+- Adding more business validation on updating invoice API.
 
 
 ### Built With
