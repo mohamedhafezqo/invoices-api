@@ -3,7 +3,7 @@ build:
 	docker exec php-container composer install
 	make create-db
 	make migrate
-#	make fixture
+	make fixture
 
 create-db:
 	docker exec php-container php bin/console doctrine:database:create --if-not-exists

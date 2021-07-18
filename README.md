@@ -34,7 +34,7 @@
 	"description": "Seld Speed inc",
 	"cost": 1000,
 	"quantity": 5,
-	"company": 62
+	"company": 2
 }
 ```
 - Response
